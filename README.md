@@ -2,7 +2,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status: Research](https://img.shields.io/badge/status-research-orange.svg)]()
 
-**Patient-to-Virtual-Cell AI for precision cancer therapy** — integrating mechanistic pathway modeling with machine learning for personalized treatment predictions.
+#**Patient-to-Virtual-Cell AI for precision cancer therapy** 
+Integrating mechanistic pathway modeling with machine learning for personalized treatment predictions.
 
 ![Dashboard Preview](examples/synthetic_comprehensive_results.png)
 ---
