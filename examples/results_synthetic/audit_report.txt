@@ -1,0 +1,13 @@
+================================================================================
+CLINICAL AUDIT REPORT
+================================================================================
+
+Total predictions logged: 5
+Date range: 2026-01-05T15:16:41.565226 to 2026-01-05T15:16:41.567525
+Unique patients: 5
+Model versions: {'2.0'}
+Compliance standard: FDA 21 CFR Part 11
+
+================================================================================
+All prediction events are logged with full traceability.
+Log file: clinical_audit_log.jsonl
