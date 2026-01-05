@@ -1,0 +1,23 @@
+type,feature,high_response_rate,low_response_rate,delta,clinical_note,features,delta_response
+predictive,cycE_max,0.16666666666666666,0.8333333333333334,0.6666666666666667,66.7% response difference,,
+predictive,cycE_final,0.16666666666666666,0.8333333333333334,0.6666666666666667,66.7% response difference,,
+predictive,p53_mean,0.8266666666666667,0.17333333333333334,0.6533333333333333,65.3% response difference,,
+predictive,p53_auc,0.8266666666666667,0.17333333333333334,0.6533333333333333,65.3% response difference,,
+predictive,cycE_mean,0.17333333333333334,0.8266666666666667,0.6533333333333333,65.3% response difference,,
+predictive,p53_max,0.82,0.18,0.6399999999999999,64.0% response difference,,
+predictive,p53_final,0.82,0.18,0.6399999999999999,64.0% response difference,,
+predictive,p53_variance,0.8133333333333334,0.18666666666666668,0.6266666666666667,62.7% response difference,,
+predictive,cell_cycle_activity,0.2,0.8,0.6000000000000001,60.0% response difference,,
+predictive,bax_max,0.7866666666666666,0.21333333333333335,0.5733333333333333,57.3% response difference,,
+predictive,p53_mdm2_ratio,0.74,0.26,0.48,48.0% response difference,,
+predictive,mdm2_mean,0.7066666666666667,0.29333333333333333,0.41333333333333333,41.3% response difference,,
+combination,,,,,p53_max+p53_mean: 54.2% response diff,"['p53_max', 'p53_mean']",0.5416666666666667
+combination,,,,,p53_max+p53_final: 52.1% response diff,"['p53_max', 'p53_final']",0.5208333333333333
+combination,,,,,p53_max+p53_auc: 54.2% response diff,"['p53_max', 'p53_auc']",0.5416666666666667
+combination,,,,,p53_max+p53_variance: 56.2% response diff,"['p53_max', 'p53_variance']",0.5625
+combination,,,,,p53_mean+p53_final: 54.2% response diff,"['p53_mean', 'p53_final']",0.5416666666666667
+combination,,,,,p53_mean+p53_auc: 54.2% response diff,"['p53_mean', 'p53_auc']",0.5416666666666667
+combination,,,,,p53_mean+p53_variance: 56.2% response diff,"['p53_mean', 'p53_variance']",0.5625
+combination,,,,,p53_final+p53_auc: 54.2% response diff,"['p53_final', 'p53_auc']",0.5416666666666667
+combination,,,,,p53_final+p53_variance: 56.2% response diff,"['p53_final', 'p53_variance']",0.5625
+combination,,,,,p53_auc+p53_variance: 56.2% response diff,"['p53_auc', 'p53_variance']",0.5625

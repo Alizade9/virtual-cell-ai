@@ -1,0 +1,44 @@
+================================================================================
+COMPREHENSIVE ANALYSIS REPORT
+Enhanced Patient-to-Virtual-Cell AI Pipeline
+================================================================================
+
+DATASET OVERVIEW
+----------------------------------------
+Total patients: 300
+Features extracted: 42
+
+MULTI-TASK MODEL PERFORMANCE
+----------------------------------------
+Disease Progression:
+  Accuracy: 0.853
+  AUC: 0.942
+
+Treatment Response:
+  Accuracy: 0.880
+  AUC: 0.957
+
+Survival Prediction:
+  MAE: 5.87 months
+  RMSE: 7.31 months
+
+UNCERTAINTY ANALYSIS
+----------------------------------------
+Mean prediction uncertainty (95% CI width): 0.945
+Patients with high confidence (CI < 0.2): 0
+
+TOP PREDICTIVE FEATURES
+----------------------------------------
+  25.0: 0.1225
+  27.0: 0.0719
+  23.0: 0.0705
+  11.0: 0.0394
+  12.0: 0.0384
+  0.0: 0.0351
+  20.0: 0.0341
+  2.0: 0.0317
+  9.0: 0.0302
+  13.0: 0.0286
+
+================================================================================
+Report generated successfully
