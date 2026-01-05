@@ -67,7 +67,7 @@ Drug Recommendations + Biomarkers
 
 ```bash
 # Clone repository
-git clone https://github.com/Alizde9/virtual-cell-ai.git
+git clone https://github.com/Alizade9/virtual-cell-ai.git
 cd virtual-cell-ai
 
 # Install dependencies
