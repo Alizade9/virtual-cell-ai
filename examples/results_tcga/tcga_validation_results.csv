@@ -1,0 +1,2 @@
+dataset,n_patients,progression_auc,response_auc,survival_mae
+TCGA Breast Cancer,198,0.9967793880837359,0.9924242424242425,1706.9566123138522
