@@ -8,7 +8,7 @@ AI-powered clinical decision support for precision oncology
 
 Integrating mechanistic pathway modeling with machine learning for personalized treatment predictions.
 
-![Dashboard Preview](examples/enhanced_pipeline_results.png)
+![Dashboard Preview](examples/synthetic_comprehensive_results.png)
 
 ## 🎯 Overview
 
