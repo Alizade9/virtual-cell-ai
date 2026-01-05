@@ -1,0 +1,26 @@
+# Core Dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+scipy>=1.7.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+scikit-survival>=0.17.0
+
+# Systems Biology (ODE Simulation)
+tellurium>=2.2.0
+
+# Explainability
+shap>=0.41.0
+
+# Survival Analysis
+lifelines>=0.27.0
+
+# Deep Learning (Optional - for LSTM)
+# tensorflow>=2.8.0
+
+# Utilities
+tqdm>=4.62.0
+joblib>=1.1.0
