@@ -4,6 +4,7 @@
 
 **Patient-to-Virtual-Cell AI for precision cancer therapy** — integrating mechanistic pathway modeling with machine learning for personalized treatment predictions.
 
+![Dashboard Preview](examples/synthetic_comprehensive_results.png)
 ---
 
 ## 🎯 Overview
