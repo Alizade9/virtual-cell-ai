@@ -1,12 +1,14 @@
+# virtual-cell-ai
+AI-powered clinical decision support for precision oncology
+# Patient-to-Virtual-Cell AI for precision cancer therapy
+
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status: Research](https://img.shields.io/badge/status-research-orange.svg)]()
 
-#**Patient-to-Virtual-Cell AI for precision cancer therapy** 
 Integrating mechanistic pathway modeling with machine learning for personalized treatment predictions.
 
-![Dashboard Preview](examples/synthetic_comprehensive_results.png)
----
+![Dashboard Preview](examples/enhanced_pipeline_results.png)
 
 ## 🎯 Overview
 
