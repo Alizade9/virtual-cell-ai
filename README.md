@@ -91,7 +91,7 @@ python enhanced_pipeline.py
 python tcga_validation.py
 
 # 3. (Optional) Federated learning demo
-python federated_learning_demo.py
+python federal_learning_demo.py
 
 # 4. (Optional) Multi-Modal training: Molecular + Image Features
 python multimodal_pipeline.py
