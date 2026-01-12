@@ -477,7 +477,10 @@ def build_enhanced_ml_dataset(patient_df):
 # STAGE 6: Advanced ML - Multi-Task Learning
 # ============================================================================
 
-def train_multitask_model(ml_df):
+def train_multitask_model(ml_df,
+                          n_estimators=300,
+                          max_depth=None,
+                          random_state=42):
     """
     Week 3 (15.12.25): Train model to predict multiple outcomes simultaneously.
     Improves generalization through shared representations.
