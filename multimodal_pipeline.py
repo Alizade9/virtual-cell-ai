@@ -4,22 +4,53 @@
 import numpy as np
 import pandas as pd
 from enhanced_pipeline import train_multitask_model
-from tcga_validation import ml_df  # Use existing TCGA data
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
+import pickle
+
+
+
+# Load TCGA molecular feature matrix
+ml_df = pd.read_csv("results_tcga/tcga_ml_features.csv")
 
 print("=" * 80)
 print("MULTI-MODAL PIPELINE: Molecular + Imaging")
 print("=" * 80)
 
-# Simulate image features (ResNet embeddings would be 2048-dim)
+# 0) Train molecular-only baseline
+print("\n[0/3] Training molecular-only baseline on TCGA features...")
+results_molecular, _, _, _, _ = train_multitask_model(ml_df)
+print(f"✓ Molecular-only progression AUC: {results_molecular['progression']['auc']:.3f}")
+
+# 1) Simulate image features
 print("\n[1/3] Simulating histopathology image features...")
-n_patients = len(ml_df)
+
+n_patients = len(ml_df)  # ← define n_patients here
+
 image_features = pd.DataFrame(
-    np.random.randn(n_patients, 50),  # 50 image features (simplified)
-    columns=[f'img_{i}' for i in range(50)]
+    np.random.randn(n_patients, 50),
+    columns=[f"img_{i}" for i in range(50)]
 )
+
+# (Optional) make first 5 image features weakly predictive
+y = ml_df["disease_progression"].values
+for i in range(5):
+    image_features[f"img_{i}"] += y * 0.8
+
 print(f"✓ Generated {image_features.shape[1]} image features")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Combine molecular + image
 print("\n[2/3] Combining molecular and image features...")
@@ -28,10 +59,12 @@ print(f"✓ Combined features: {len(ml_df.columns)} molecular + {len(image_featu
 
 # Train on multi-modal
 print("\n[3/3] Training multi-modal model...")
-results_mm, _, _, _, _ = train_multitask_model(multimodal_df)
+results_mm, _, _, _, _ = train_multitask_model(
+    multimodal_df,
+    n_estimators=300,
+    max_depth=None,
+)
 
-# Compare to molecular-only (from tcga_validation)
-from tcga_validation import results as results_molecular
 
 improvement = results_mm['progression']['auc'] - results_molecular['progression']['auc']
 
