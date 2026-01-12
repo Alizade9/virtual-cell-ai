@@ -19,6 +19,7 @@ import matplotlib.pyplot as plt
 import shutil
 import glob
 import os
+import pickle
 
 print("=" * 80)
 print("TCGA VALIDATION - REAL DATA")
@@ -96,6 +97,9 @@ for idx, patient in patient_df.iterrows():
 ml_df_tcga = pd.DataFrame(all_features)
 print(f"✓ Simulations complete ({len(ml_df_tcga)} patients with 35 features)")
 
+# NEW: save TCGA ML feature matrix for multimodal_pipeline
+ml_df_tcga.to_csv("tcga_ml_features.csv", index=False)
+
 # ============================================================================
 # STEP 4: TRAIN MULTI-TASK MODELS ON TCGA
 # ============================================================================
@@ -166,7 +170,8 @@ print(" - tcga_comprehensive_results.png (15-panel figure)")
 print(" - tcga_predictions.csv")
 print("=" * 80)
 
-
+with open("results_tcga/results_tcga.pkl", "wb") as f:
+    pickle.dump(results_tcga, f)
 
 
 
