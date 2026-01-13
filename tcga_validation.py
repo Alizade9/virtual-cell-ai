@@ -170,6 +170,7 @@ print(" - tcga_comprehensive_results.png (15-panel figure)")
 print(" - tcga_predictions.csv")
 print("=" * 80)
 
+os.makedirs("results_tcga", exist_ok=True)
 with open("results_tcga/results_tcga.pkl", "wb") as f:
     pickle.dump(results_tcga, f)
 
