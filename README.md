@@ -355,7 +355,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Tellurium** for ODE simulation framework
 - **TCGA** for breast cancer dataset
@@ -380,9 +380,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ---
 
 <div align="center">
-  
-**🌟 Star this repo if you find it useful!**
 
-Made with ❤️ for precision oncology research
 
 </div>
